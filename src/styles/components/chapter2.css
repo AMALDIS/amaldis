@@ -1,0 +1,424 @@
+.animationGif {
+   position: absolute;
+  width: 100%;
+  cursor: pointer;
+}
+/*SCENE 1*/
+.audumblaProfile {
+  position: absolute;
+  width: 7%;
+  margin-top: 3.5rem;
+  margin-left: 25rem;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.2rem;
+  border-radius: 12px;
+  animation: 1s shade_move infinite forwards ease-out;
+}
+.river {
+  display: flex;
+  background: url(../../assets/images/chapter2/river.png);
+  background-position-y: -52rem;
+  width: 790px;
+  height: 470px;
+  margin-top: 8rem;
+  margin-left: 13rem;
+  opacity: 0;
+}
+.river-move {
+  animation: 1s river-move forwards;
+}
+@keyframes river-move {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    background-position-y: 25rem;
+  }
+}
+.riverMilk {
+  z-index: 1;
+  height: 84px;
+  width: 790px;
+  position: absolute;
+  margin-top: 27rem;
+  margin-left: 13rem;
+  opacity: 0;
+}
+.riverMilk-move{
+  animation: 1.2s riverMilk-move forwards;
+}
+@keyframes riverMilk-move {
+  73% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*SCENE 1*/
+
+
+.contentCenter {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*SCENE 2*/
+.audumblaSleeping {
+  cursor: pointer;
+}
+.audumblaDrooling {
+  display: flex;
+  width: 50%;
+  margin-top: 5rem;
+}
+/*SCENE 2*/
+
+
+/*SCENE 3*/
+.imageRock{
+  cursor: pointer;
+}
+.rock {
+  position: absolute;
+  width: 40%;
+  margin-top: 5rem;
+  opacity: 100%;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 12px;
+  animation: 1s shade_move infinite forwards ease-out;
+}
+.rock:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.rock-move {
+  animation: 1s rock-move forwards;
+}
+@keyframes rock-move {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.sonAudumbla {
+  width: 65%;
+  margin-top: 6.5rem;
+  opacity: 0;
+}
+.sonAudumbla-move {
+  animation: 1s sonAudumbla-move forwards;
+}
+@keyframes sonAudumbla-move {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/*SCENE 3*/
+
+
+/*SCENE 4*/
+.drop {
+  position: absolute;
+  z-index: 1;
+  width: 2.5%;
+  margin-left: 13rem;
+  margin-top: 12rem;
+  cursor: pointer;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 12px;
+  animation: 1s shade_move infinite forwards ease-out;
+}
+.drop_move {
+  animation: 1s drop-move linear forwards;
+}
+@keyframes drop-move {
+  0% {
+    transform: translateY(auto);
+  }
+  100% {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+}
+.drop:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.ymirSleeping {
+  position: absolute;
+  width: 90%;
+}
+.scene_3 {
+  z-index: 1;
+}
+.ymirSleeping_move {
+  -webkit-animation: ymir_move 1.5s linear forwards;
+  -webkit-animation-delay: 1.2s;
+}
+@keyframes  ymir_move {
+  0% {
+    transform: translateY(auto);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+.footY {
+  overflow: hidden;
+}
+.footYmir {
+  width: 80%;
+  margin-top: 12rem;
+  margin-left: -50rem;
+  cursor: pointer;
+}
+.footYmir_move {
+  -webkit-animation: footYmir 2s linear forwards;
+  -webkit-animation-delay: 3s;
+}
+@keyframes  footYmir {
+  0% {
+    transform: translatex(auto);
+  }
+  100% {
+    transform: translatex(70%);
+  }
+}
+/*SCENE 4*/
+
+
+/*SCENE 5*/
+.flicker {
+  position: absolute;
+  background: url(../../assets/images/chapter2/flicker.png) ;
+  width: 1200px;
+  height: 600px;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 100%;
+}
+.ymirShade {
+  width: 54%;
+  height: 50%;
+  margin-top: 9rem;
+  z-index: 2;
+  padding: 0;
+}
+.flicker-move {
+  animation: 1.1s flicker-move steps(2) forwards;
+}
+@keyframes flicker-move {
+  95% {
+    background-position-y: 1040px;
+    z-index: 1;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
+  }
+}
+.ymirProfile {
+  position: absolute;
+  z-index: 0;
+  width: 50%;
+  margin-top: 20rem;
+}
+.ymirP-move {
+  animation: 1.5s ymirP-move forwards linear;
+}
+@keyframes ymirP-move {
+  0% {
+    opacity: 0;
+    z-index: 0;
+  }
+  50% {
+    opacity: 50%;
+    z-index: 0;
+  }
+  100% {
+    opacity: 100%;
+    z-index: 1;
+  }
+}
+/*SCENE 5*/
+
+
+/*SCENE 6*/
+.hands {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  overflow: hidden;
+}
+.handLeft {
+  margin-left: -4rem;
+  cursor: pointer;
+}
+.handRight {
+  margin-left: 20rem;
+}
+.ring {
+  position: absolute;
+  margin-left: 10rem;
+  margin-top: -8rem;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.2rem;
+  border-radius: 12px;
+  animation: 1s shade_move infinite forwards ease-out;
+}
+.ring:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  
+}
+.brothers {
+  z-index: 0;
+  width: 100%;
+  opacity: 0;
+}
+.brothers-move {
+  animation: 1.5s brothers-move forwards linear;
+}
+@keyframes brothers-move {
+  0% {
+    opacity: 0;
+    z-index: 2;
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+/*SCENE 6*/
+
+
+/*SCENE 7*/
+.screenbrothers {
+  cursor: pointer;
+}
+.brothersShade {
+  width: 22%;
+  height: 25%;
+  margin-top: 1rem; 
+  z-index: 2;
+}
+.shadeLeft {
+  display: flex;
+  justify-content: end;
+}
+/*SCENE 7*/
+
+
+@media only screen and (min-width: 1920px) {
+  /*SCENE 1*/
+  .audumblaProfile {
+    margin-top: 1.5rem;
+    margin-left: 35rem;
+  }
+  .river {
+    margin-left: 28rem;
+  }
+  .riverMilk {
+    margin-left: 27rem;
+  }
+  /*SCENE 1*/
+
+  /*SCENE 2*/
+  .audumblaSleeping {
+    margin-top: 0;
+  }
+  .audumblaDrooling {
+    margin-top: 0;
+  }
+  /*SCENE 2*/
+  
+  /*SCENE 3*/
+  .rock {
+    margin-top: 0;
+  }
+  .sonAudumbla {
+    margin-top: 0;
+  }
+  /*SCENE 3*/
+
+  /*SCENE 4*/
+  .drop {
+    margin-left: 14rem;
+  }
+  .ymirSleeping {
+    width: 70%;
+  }
+  .footYmir {
+    width: 80%;
+    margin-top: 12rem;
+    margin-left: -80rem;
+    cursor: pointer;
+  }
+  
+  /*SCENE 4*/
+
+  /*SCENE 5*/
+  .flicker {
+    width: 100%;
+    background-size: cover;
+  }
+  
+  /*SCENE 5*/
+
+  /*SCENE 6*/
+  .handRight {
+    margin-left: 48rem;
+  }
+  /*SCENE 6*/
+}
+
+.see-more-chapter3{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top: 26rem;
+  left: 35%;
+}
+
+/*SOUNDS*/
+.sound{
+  top: 25rem;
+  right: 1rem;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+}
+.sound img{
+  width: 2rem;
+}
+/*SOUNDS*/
+
+.capitulo{
+  display: flex;
+}
+.text-cap{
+  position: absolute;
+  font-size: 100pt;
+  align-self: center;
+  left: 18rem;
+}

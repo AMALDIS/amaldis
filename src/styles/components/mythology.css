@@ -1,0 +1,77 @@
+.mythology {
+  padding-top: 4.2rem;
+}
+.mythology .row-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 6rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.main-photo {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.mythology-info h1 {
+  font-size: 1.5em;
+  margin: 1rem 0 2rem;
+  text-align: center;
+  color: var(--very-dark-red);
+}
+.mythology-info h2 {
+  font-size: 20px;
+  margin: 1rem 0 2rem;
+  text-align: center;
+  color: var(--very-dark-red);
+
+}
+.mythology-text {
+  margin: 1.5rem 0;
+  font-size: 18px;
+  line-height: 1.6rem;
+}
+.greek, .nordic{
+  display: none;
+}
+
+.arrow, .arrow-hide, .arrow-principal {
+  width: 2rem; 
+}
+.arrow:hover {
+  transform: rotate(360deg);
+  transition: 1.2s;
+}
+.show-content, .hide-content, .show-content-nordic, .hide-content-nordic{
+  background-color: var(--very-dark-red);
+	border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hide-content, .hide-content-nordic {
+  display: none;
+}
+.show-content:hover {
+  transform: scale(1.1);
+}
+.arrow_move {
+  animation-iteration-count: infinite;
+  animation: 3s arrow_move forwards ;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .mythology .row-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+  }
+  .mythology-text{
+    text-align: center;
+  }
+}
+

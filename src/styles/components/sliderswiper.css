@@ -1,0 +1,19 @@
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    color: white;
+    width: 8rem;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    color: white;
+}
+.swiper{
+    width: 80%;
+    height: 33rem;
+    border-radius: 15px;
+    margin: 3rem auto;
+}
+
+/* @media only screen and (min-width: 1900px) {
+    .swiper {
+        height: 45rem;
+    }
+} */

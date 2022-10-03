@@ -1,0 +1,82 @@
+
+.project {
+  padding: 4rem 0;
+}
+.project .row-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 6rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.main-photo {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.container .title, .mythology-text{
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: white;
+}
+.carousel .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled ::after,  .carousel .swiper-button-prev.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled ::after{
+  opacity: 0;
+}
+
+.carousel .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .carousel .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  background-color: #bf2d2d;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .project .row-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+  }
+  .project {
+    padding: 0;
+  }
+  .main-photo{
+    display: none;
+  }
+  .title{
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .main-photo{
+    display: block;
+    width: 11rem;
+    margin: 0 auto;
+  }
+  .project .row-grid {
+    gap: 0rem;
+  }
+  .title h1{
+    font-size: 0.5em;
+  }
+  .info-text {
+    font-size: 0.5em;
+    margin-top: 0.5rem;
+  }
+}
+
+.poster{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 375px){
+  .info-slider .title{
+    font-size: 2px;
+    margin-bottom: -2rem;
+  }
+  .info-slider .text-slider{
+    font-size: 0.8em;
+    margin-top: 0.8rem;
+  }
+}
+

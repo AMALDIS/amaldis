@@ -1,0 +1,156 @@
+/*SLIDER*/
+
+/*SLIDER*/
+
+.absoluteContent {
+    position: absolute;
+    width: 100%;
+}
+.content-slider .title{
+    position: relative;
+    color: white;
+    font-size: 3.25em;
+    margin: 0.5rem 0;
+}
+.text-slider {
+    color: white;
+    margin: 2rem 1rem 2.5rem 1rem;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+}
+.content-slider {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.info-slider {
+    justify-content: center;
+    margin: 4rem;
+}
+.thumbnails {
+    cursor: pointer;
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.avatar-thumbnail {
+    width: 5rem;
+    height: auto;
+}
+.avatar-slide {
+    width: 38rem;
+    margin-left: -5rem;
+}
+.character-thumbnail {
+    background-color: #CC3737;
+	border-radius: 12px;
+    width: 130px;
+    height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.character-thumbnail:hover {
+    animation: animation_button 1s ease;
+    animation-iteration-count: 1;
+}
+@keyframes animation_button {
+    15% {
+    transform: translateX(5px);
+    }
+    30% {
+    transform: translateX(-5px);
+    }
+    50% {
+    transform: translateX(3px);
+    }
+    65% {
+    transform: translateX(-3px);
+    }
+    80% {
+    transform: translateX(2px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .swiper {
+        width: 90%;
+        height: 22rem;
+    }
+    .content-slider {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .text-slider {
+        font-size: 1.2em;
+    }
+    .info-slider .title {
+        font-size: 1.5em;
+    }
+    .avatar-slide {
+        display: none;
+    }
+    .thumbnails {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 662px) {
+    .swiper {
+        height: 14rem;
+    }
+    .info-slider{
+        width: 90%;
+    }
+    .info-slider {
+        margin: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 588px) {
+    .info{
+        width: 90%;
+    }
+    .info-slider {
+        margin: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 581px) {
+   .swiper {
+       height: 12rem;
+   }
+   .info-slider {
+    margin: 1rem 1.7rem;
+   }
+   .info-slider .title {
+    font-size: 1em;
+   }
+   .text-slider {
+       font-size: 0.7em;
+   }
+}
+@media only screen and (max-width: 500px) {
+    .swiper {
+        height: 11rem;
+    }
+    .info-slider{
+        width: 95%;
+    }
+    .info-slider .title {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .infomythology {
+        display: none;
+    }
+  }

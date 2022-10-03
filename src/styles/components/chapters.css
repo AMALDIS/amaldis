@@ -1,0 +1,58 @@
+.cards-chapters {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6rem;
+    grid-template-areas: "image";
+    justify-content: center;
+    width: 90%;
+    margin: 2rem auto;
+}
+.card-image{
+    grid-area: image;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.card-chapter1, .card-chapter2, .card-chapter3 {
+    border-radius: 30px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s;
+}
+.card-chapter1:hover, .card-chapter2:hover, .card-chapter3:hover{
+    transform: translateY(-16px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.card-chapter1 h3{
+    background-color: var(--very-dark-blue); 
+    width: image;
+}
+.card-chapter2 h3 {
+    background-color: var(--very-light-blue);
+    width: image;
+}
+.card-chapter3 h3 {
+    background-color: var(--very-light-grays);
+    width: image;
+}
+.cards-chapters h3 {
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;    
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .cards-chapters {
+      display: grid;
+      grid-template-columns: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+    .cards-chapters {
+      display: grid;
+      width: 65%;
+      grid-template-columns: auto;
+    } 
+}

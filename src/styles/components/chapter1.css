@@ -1,0 +1,692 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap");
+
+/*STYLES*/
+.mobile {
+  display: none;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide-height {
+  position: absolute;
+  width: 100%;
+  height: 0;
+}
+.nextChapter {
+  position: absolute;
+  width: 100%;
+}
+.content-text-comic {
+  position: absolute;
+  height: auto;
+  background-color: white;
+  border: 3px solid black;
+  font-family: "Comic Neue", cursive;
+  width: 100%;
+  z-index: 4;
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1.2em;
+  border-radius: 15px;
+}
+.content-text-comic-down {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  background-color: white;
+  border: 3px solid black;
+  font-family: "Comic Neue", cursive;
+  width: 100%;
+  z-index: 4;
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1.2em;
+  border-radius: 15px;
+}
+.contentComic {
+  position: relative;
+}
+.scene_2, .scene_7 {
+  z-index: 1;
+}
+.block {
+  display: block;
+}
+.box {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+.animationGif {
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+}
+/*STYLES*/
+
+
+/*HELP*/
+.help {
+  padding: 20px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border: #bf2d2d 4px solid;
+  display: flex;
+  z-index: 3;
+  position: absolute;
+  left: 9%;
+  top: 104%;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background-color: rgba(55, 55, 55, 0.201);
+  transition: all 500ms ease;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+.contentModal{
+  animation: tranlateModal 1s forwards;
+  width: 500px;
+  height: 430px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+  transition: all 500ms ease;
+  position: relative;
+  border-radius: 15px;
+}
+@keyframes tranlateModal {
+  100% {
+    transform: translateY(20%);
+  }
+}
+@keyframes translate {
+  100% {
+    transform: translateY(-20%);
+  }
+}
+.contentModal h2{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+  background: var(--very-dark-red);
+  color: #ffffff;
+  text-align: center;
+}
+.contentModal .btn-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.contentComic .textModal p{
+  margin: 1rem;
+}
+.lbl-modal {
+  cursor: pointer;
+}
+.view {
+  display: unset;
+}
+.textModal {
+  margin: 2rem;
+}
+.textModal p {
+  font-size:large;
+}
+.nota1{
+  display: flex;
+}
+.check{
+  width: 10%;
+  padding: 0.2rem;
+}
+.textModal ul{
+  padding: 0.5rem;
+}
+.textModal ul li{
+  font-size:large;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+/*HELP*/
+
+
+/*CHAPTER*/
+.image-cap {
+  position: relative;
+}
+.chapterNumber {
+  position: absolute;
+  color: white;
+  background-color: var(--very-dark-red);
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  top: 3rem;
+  left: 10rem;
+  font-size: 1em;
+  font-weight: 300;
+}
+.chapterTitle {
+  position: absolute;
+  color: white;
+  top: 7rem;
+  left: 11rem;
+  font-size: 1.8em;
+}
+.capLeft {
+  left: 12rem;
+  top: 14rem;
+  width: 60%;
+}
+.capCenter {
+  top: 3rem;
+  left: 3rem;
+  width: 75%;
+}
+.capRight{
+  right: 6rem;
+  width: 90%;
+}
+.capGo {
+  position: absolute;
+  right: 18rem;
+  top: 16rem;
+  width: 20%;
+}
+.capitulo{
+  display: flex;
+  z-index: 4;
+}
+/*CHAPTER*/
+
+
+/*SCENE 1*/
+.btnPlay {
+  width: 5rem;
+  left: 50%;
+  top: 50%;
+  margin: -1.5rem 0 0 -1.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+.btnPlay:hover {
+  transform: scale(1.1);
+}
+.stars-move {
+  position: absolute;
+}
+
+.move_background {
+  animation: move_background 7.5s infinite;
+}
+@keyframes move_background {
+  0% { transform: scale(auto); }
+  50% { transform: scale(2.5); }
+  100% { transform: scale(auto); }
+}
+.stars-move {
+  animation: 4s stars_animated infinite;
+}
+@keyframes stars_animated {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+/*SCENE 1*/
+
+
+/*SCENE 2*/
+.niflheim {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 10%;
+  cursor: pointer;
+  z-index: 2;
+  padding: 1rem;
+  border-radius: 12px;
+  animation: 1s shade_move infinite forwards ease-out;
+}
+@keyframes shade_move {
+  0% {
+    box-shadow: 0px 1px 5px 5px rgb(245, 210, 13);
+  }
+  100% {
+  box-shadow: 0px 1px 10px 10px rgba(163, 139, 3, 0.253);
+  }
+  }
+  
+.nilfheimDetails {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+}
+/*SCENE 2*/
+
+
+/*SCENE 3*/
+.muselheim {
+  z-index: 3;
+  position: absolute;
+  margin-left: 70%;
+  margin-top: 10%;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 12px;
+  animation: 1s shade_move infinite forwards ease-out;
+}
+.muselheimDetails{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+/*SCENE 3*/
+
+
+/*SCENE 4*/
+.fusionplanets {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.niflheim-union {
+  margin-left: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 12px;
+  animation: 1s shade_move infinite forwards ease-out;
+}
+
+.muselheim-union {
+  margin-left: 34rem;
+  cursor: pointer;
+}
+.planet {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.planetEarth {
+  opacity: 0;
+  width: 30%;
+  display: flex;
+}
+.niflheim-fusion {
+  animation: 3s niflheim_fusion forwards linear;
+}
+
+@keyframes niflheim_fusion {
+  0% { margin-left: -143px; }
+  50% { margin-left: 300px;}
+  70% { margin-left: 150px;}
+  95% { opacity: 1;}
+  100% { margin-left: 300px; 
+         opacity: 0; }
+}
+.muselheim-fusion {
+  animation: 3s muselheim_fusion forwards linear;
+}
+@keyframes muselheim_fusion {
+  0% { margin-left: 770px; }
+  50% {margin-left: -27px; }
+  70% {margin-left: 166px;}
+  95% {opacity: 1; }
+  100% {margin-left: -27px;
+        opacity: 0; }
+}
+.earth {
+  -webkit-animation: earth 2s linear forwards;
+  -webkit-animation-delay: 3s;
+}
+@keyframes earth {
+  0% {opacity: 1;
+      transform: translateY(0);}
+  50% {transform: translateY(-20px);}
+  100% {opacity: 1;
+        transform: translateY(0);}
+}
+/*SCENE 4*/
+
+.contentCenter {
+  display: flex;
+  justify-content: center;
+}
+
+/*SCENE 5*/
+.smoke {
+  width: 100%;
+  animation: 4s smoke forwards linear;
+}
+@keyframes smoke {
+  0% {opacity: 90%;}
+  50% {opacity: 60%;}
+  100% {opacity: 30%;}
+}
+.flower {
+  z-index: 1;
+  position: absolute;
+  background: url(../../assets/images/chapter1/flower.png);
+  width: 130px;
+  height: 179px;
+  top: 17rem;
+  left: 40rem;
+  opacity: 80%;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 12px;
+  animation: 1s shade_move infinite forwards ease-out;
+}
+.flower:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+.flower-move {
+  animation: 1s flower-move steps(3) forwards;
+}
+@keyframes flower-move {
+  100% {background-position-x: -390px;}
+}
+
+
+.textBox {
+  font-family: "Comic Neue", cursive;
+  position: absolute;
+  opacity: 0;
+}
+.textBox1 {
+  z-index: 1;
+  top: 6rem;
+  padding: 1.5rem;
+  font-size: 2.2em;
+  color: white;
+}
+.textBox2 {
+  top: 20rem;
+  right: 19.5rem;
+  font-size: 1.2em;
+  padding: 0.5rem;
+  z-index: 2;
+  color: white;
+  background-color: var(--very-dark-red);
+  border-radius: 15px;
+}
+.textBox3 {
+  z-index: 2;
+  top: 24rem;
+  right: 42.5rem;
+  background-color: white;
+  color: black;
+  font-size: 2.5em;
+  padding: 0.4rem 3rem;
+  border-radius: 15px;
+}
+.textBox-move {
+  animation: 0.7s textBox-move forwards;
+}
+@keyframes textBox-move  {
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(2);
+  }
+}
+/*SCENE 5*/
+
+
+/*SCENE 6*/
+.character_move {
+  display: flex;
+  justify-content: center;
+  margin-top: 18rem;
+}
+.audumbla {
+  padding: 1rem;
+  border-radius: 12px;
+  animation: 1s shade_move infinite forwards ease-out;
+}
+.ymir, .audumbla {
+  cursor: pointer;
+}
+
+.speechBubble {
+  z-index: 1;
+  position: absolute;
+  opacity: 0;
+  width: 10%;
+  margin-top: 6rem;
+  margin-right: 4rem;
+}
+.speechBubble-move {
+  animation: bubbleContent 1s forwards;
+}
+/*SCENE 6*/
+
+
+/*SCENE 7*/
+.udder{
+  position: absolute
+}
+.move_milk {
+  animation: 0.5s milk forwards linear;
+}
+.shade {
+  position: absolute;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 15px;
+  font-family: "Comic Neue", cursive;
+  animation: 1s shade_move infinite forwards ease-out;
+}
+.udderShade {
+  width: 25%;
+  height: 30%;
+  margin-left: 20rem;
+  margin-top: 14rem;
+  z-index: 2;
+}
+.textShade {
+  z-index: 2;
+  position: absolute;
+  font-size: 2rem;
+  padding: 1rem;
+  font-family: "Comic Neue", cursive;
+  animation: 1s textShade_move infinite forwards ease-out;
+}
+@keyframes textShade_move {
+  0% {
+    color: rgb(245, 210, 13);
+  }
+  100% {
+    color: rgba(245, 210, 13, 0.274);
+  }
+}
+.textShade1 {
+  margin-top: 28rem;
+}
+.textShade2 {
+  margin-top: 24rem;
+}
+.textShade3 {
+  margin-top: 5rem;
+}
+/*SCENE 7*/
+
+/*SCENE 8*/
+.nextBubble1 {
+  position: absolute;
+  cursor: pointer;
+  left: 15rem;
+  top: 3rem;
+  animation: 1s nextBubble1_move infinite forwards ease-out;
+}
+@keyframes nextBubble1_move {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.nextBubble2 {
+  position: absolute;
+  opacity: 1;
+  opacity: 0;
+  left: 38rem;
+  top: 1rem;
+}
+.nextBubble3 {
+  position: absolute;
+  opacity: 0;
+  left: 28rem;
+  top: 9rem;
+}
+.nextBubble4 {
+  position: absolute;
+  opacity: 0;
+  left: 28rem;
+  top: 9rem;
+}
+/*SCENE 8*/
+
+.see-more-chapter2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top: 80%;
+  left: 35%;
+}
+.bubble {
+  animation: bubbleContent 1s forwards;
+}
+.bubble2 {
+  -webkit-animation: bubbleContent 0.2s forwards;
+  -webkit-animation-delay: 0.5s;
+}
+.button-see-more{
+  -webkit-animation: buttonChapter 1s infinite;
+  -webkit-animation-delay: 1s;
+}
+@keyframes bubbleContent {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes buttonChapter {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/*SOUNDS*/
+.sound{
+  top: 29rem;
+  right: 1rem;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+}
+.sound img, .help img{
+  width: 2rem;
+}
+/*SOUNDS*/
+
+@media only screen and (max-width: 1900px) {
+  .help {
+    top: 140%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .nextChapter {
+  position: absolute;
+  width: 100%;
+  margin-top: -9rem;
+  }
+  .nextBubble1 {
+    left: 26rem;
+    top: 1rem;
+  }
+  .nextBubble2 {
+    left: 60rem;
+    top: 1rem;
+  }
+  .nextBubble3 {
+    left: 37rem;
+    top: 9rem;
+  }
+  .muselheimVal .slide{
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .help {
+    display: none;
+  }
+  .chapter{
+    display: none;
+  }
+  .see-more-chapter {
+    display: none;
+  }
+  .mobile{
+    display: grid;
+    justify-content: center;
+  }
+  .img-mobile1 {
+    padding-top: 2rem;
+  }
+  .img-mobile2 {
+    padding-bottom: 2rem;
+  }
+}
+
+.contentportada{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.contentportada2{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

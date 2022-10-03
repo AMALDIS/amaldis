@@ -1,0 +1,116 @@
+header {
+  background-image: url("../../assets/images/saludar.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+header .bannerComic{
+  background-image: url("../../assets/images/saludar2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.logo {
+  display: inline-flex;
+  cursor: pointer;
+}
+.viking {
+  
+  margin-top: 2rem;
+}
+.viking-banner{
+  margin-top: -1.8rem;
+}
+menu {
+  gap: 3rem;
+  align-items: center;
+}
+.main-menu {
+  gap: 2rem;
+}
+.main-menu li:hover{
+  transform: scale(1.1);
+}
+.main-menu a:hover, .see-more-chapter2 a:hover{
+  color: var(--dark-red);
+  box-shadow: 3px 3px 3px 2px rgba(223, 223, 223, 0.055);
+}
+.home{
+  display: flex;
+  justify-content: center;
+}
+.home-content {
+  color: white;
+  margin: 1.5rem;
+}
+.home-content h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.see-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.see-more a:hover  {
+  transform: scale(1.1);
+  color: var(--dark-red);
+  box-shadow: 3px 3px 3px 2px rgba(223, 223, 223, 0.055);
+}
+
+
+@media only screen and (min-width: 1920px) {
+  header {
+    width: 100%;
+    height: 52vh;
+  }
+}
+@media only screen and (max-width: 1190px) {
+  header {
+    background-color: var(--very-dark-red);
+    background-image: none;
+    height: auto;
+    border-bottom-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+  }
+}
+
+.toggle{
+  position: absolute;
+  width: 40px;
+  top: 1rem;
+  right: 0.8rem;
+}
+.toggle img{
+  width: 100%;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px) {
+  .toggle{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .cont-menu{
+    z-index: 4;
+    flex-direction: column;
+    display: none;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .row .logo{
+    margin-bottom: -3rem;
+  }
+  .row .main-menu{
+    flex-direction: column;
+  }
+  .active{
+    display: unset;
+    flex-direction: column;
+  }
+}
+
